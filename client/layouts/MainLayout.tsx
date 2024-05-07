@@ -1,12 +1,12 @@
 import Navbar from '@/components/Navbar';
-import React from 'react';
-
-const MainLayout: React.FC<any> = ({children}) => {
+import {FC} from 'react';
+import classes from '@/styles/MainLayout.module.scss'
+const MainLayout: FC<any> = ({children}) => {
     return (
-        <>
+        <div className={classes.wrapper}>
             <Navbar/>
             {children}
-        </>
+        </div>
     );
 };
 
