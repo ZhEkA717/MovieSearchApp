@@ -1,0 +1,29 @@
+.wrapper {
+    width: 482px;
+    height: 218px;
+    padding: 24px;
+    display: flex;
+    gap: 8px;
+    border-radius: 12px;
+    background: #FFFFFF;
+
+
+    .poster {
+        img {
+            width: 119px;
+        }
+    }
+
+    .info {
+        width: 398px;
+        height: 170px;
+
+        .vote {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 115px;
+            height: 28px;
+        }
+    }
+}

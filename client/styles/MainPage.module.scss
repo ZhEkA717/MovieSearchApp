@@ -1,0 +1,20 @@
+.wrapper {
+    padding: 42px 90px 0 90px;
+    width: 100%;
+    background: #F5F5F6;
+
+    .title {
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44.8px;
+        text-align: left;
+        color: #000000;
+    }
+
+    .items {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+}
