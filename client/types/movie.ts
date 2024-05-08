@@ -5,6 +5,10 @@ export interface MovieResponse {
     total_results: number
 } 
 
+export interface GenreResponse {
+    genres: Genre[];
+}
+
 export interface Movie {
     id: number,
     original_title: string,
@@ -15,8 +19,19 @@ export interface Movie {
     genre_ids: number[],
 }
 
+export interface Genre {
+    id: number;
+    name: string;
+}
+
 export interface MovieState {
     loading: boolean,
     movie: MovieResponse,
+    error: string,
+}
+
+export interface GenreState {
+    loading: boolean,
+    genre: GenreResponse,
     error: string,
 }

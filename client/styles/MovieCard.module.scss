@@ -3,7 +3,7 @@
     height: 218px;
     padding: 24px;
     display: flex;
-    gap: 8px;
+    gap: 16px;
     border-radius: 12px;
     background: #FFFFFF;
 
@@ -11,19 +11,108 @@
     .poster {
         img {
             width: 119px;
+            height: 170px;
         }
     }
 
     .info {
         width: 398px;
         height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .info-wrapper {
+            height: 88px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .title {
+                font-family: Inter;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24.2px;
+                text-align: left;
+                color: #9854F6;
+            }
+
+            .date {
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: left;
+                color: #7B7C88;
+            }
+        }
 
         .vote {
             display: flex;
-            justify-content: space-between;
+            gap: 8px;
             align-items: center;
             width: 115px;
             height: 28px;
+
+            div:first-child {
+                width: 54px;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+                text-align: left;
+                color: #000000;
+            }
+
+            div:last-child {
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.36px;
+                text-align: left;
+                color: #7B7C88;
+            }
+        }
+    }
+
+    .genres {
+
+        .title {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.36px;
+            text-align: left;
+            color: #7B7C88;            
+        }
+
+        .name {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            color: #000000;
+        }
+    }
+
+    .rating {
+        width: 43px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        span {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            text-align: left;
+            color: #000000;
         }
     }
 }
