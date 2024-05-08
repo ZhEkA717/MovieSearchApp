@@ -1,0 +1,61 @@
+.wrapper {
+    margin-top: 41px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    gap: 16px;
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 283px;
+    }
+
+    .title {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22.4px;
+        text-align: left;
+        color: #000000;
+    }
+
+    .reset {
+        width: 81px;
+        height: 72px;
+        display: flex;
+        align-items: end;
+
+        button {
+            cursor: pointer;
+            padding: 0;
+            border: none;
+            width: 100%;
+            height: 42px;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: left;
+            color: #9854F6;
+            white-space: nowrap;
+            background: transparent;
+            transition: .3s;
+
+            &:hover {
+                color: #BD93F7;
+                position: relative;
+
+                &:after {
+                    content: url('../public/assets/icons/close.svg');
+                    position: absolute;
+                    top: 13px;
+                    right: -17px;
+                    color: #BD93F7;
+                }
+            }
+        }
+    }
+
+}
